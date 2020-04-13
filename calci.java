@@ -573,13 +573,8 @@ public class MainActivity extends AppCompatActivity {
         b12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(t1.getText()==""){
-                    s.append("0-");
-                    flag=1;
-                    t1.setText("-");
-                    d[le]=x;
-                    le=le+1;
-                }
+                if(t1.getText()=="")
+                    t1.setText("");
                 else if(s.charAt(s.length()-1)==40){
                     t1.setText(s);
                 }
